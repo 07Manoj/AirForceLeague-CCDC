@@ -2,14 +2,15 @@
 
 This repository contains the configuration files for the Air Force Cyber Defense League organized by University of Massachusetts Lowell  Research Institute.  
 
-**Task:**The task is to deploy infrastructure using an automation tool called  "ansible" and perform specific tasks which would secure the air force infrastructure.
+**Task:** The task is to deploy infrastructure using an automation tool called  "ansible" and perform specific tasks which would secure the air force infrastructure.
 
-**Getting Started**
-  Follow the below mentioned steps to deploy the infrastructure on any machine.
+**<style="text-align: center;">****Getting Started**  
+
+Follow the below mentioned steps to deploy the infrastructure on any machine.
 
 **Scenario:** Consider a production environment where you have multiple servers and you will have to deploy virtual machines/containers or patch updates. You might have to add or delete user accounts. Ansible lets you do all of that and more from a single workstation.
 
-I am using a docker container running ubuntu as my workstation. I am a root user in the container and hence I do not need super user privileges to run the commands or install something. If you are not a root user, you will need super user privileges and once you have the privileges, you can use super-user-do(sudo) to make changes.
+        - I am using a docker container running ubuntu as my workstation. I am a root user in the     container and hence I do not need super user privileges to run the commands or install something. If you are not a root user, you will need super user privileges and once you have the privileges, you can use super-user-do(sudo) to make changes.
 
 **Part 1:** Getting your workstation ready.
 
