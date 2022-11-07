@@ -1,0 +1,22 @@
+- hosts: all
+  tasks:
+
+# Deploying the haproxy container on the remote host. Using a host volume here to provision changes to the haproxy configuraiton. Mapping ports 80 and 
+# 443 from host machine to the haproxy container to use http and https
+    - name: Deploying the haproxy container
+      become_user: ansible-admin
+      docker_container:
+        name: haproxy
+        hostname: haproxy
+        image: haproxy:latest
+        pull: true
+        state: started
+        detach: yes
+        restart_policy: always
+        networks:
+          - name: website-network
+        published_ports:
+          - "80:80"
+          - "443:443"
+        volumes:
+          - /home/ansible-admin/haproxy:/usr/local/etc/haproxy/

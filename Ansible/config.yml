@@ -1,0 +1,67 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+#The remote host in this case is Ubuntu Server 
+
+  - name: Adding an user who will be provisioning the services on the remote host
+    user:
+      name: ansible-admin
+      group: sudo
+      shell: /bin/bash
+
+  - name: Copying the SSH key to the remote system to login without a password
+    authorized_key:
+      user: ansible-admin
+      key: "{{ lookup('file', '~/.ssh/ansibleid_rsa.pub') }}"
+
+  - name: Copying the sudoers file to remote system to prevent using sudo password
+    copy:
+      src: ansibleadmin
+      dest: /etc/sudoers.d/ansible-admin
+      owner: root
+      group: root
+
+  - name: Install Docker on the remote host
+    package:
+      name:
+        - docker
+        - docker.io
+        - docker-compose
+      state: latest
+      update_cache: true
+
+#Adding the user to the docker group so that we can run docker commands without sudo
+
+  - name: Add the user to the docker group 
+
+    shell: usermod -aG docker ansible-admin
+
+    #Installing dependecies to use docker with ansible
+
+  - name: Install pip3 for Python 
+    package:
+      name:
+        - python3-pip
+
+  - name: Install Python Docker SDK
+    pip:
+      name:
+        - docker
+        - docker-compose
+
+#Starting the docker service and enabling so that we can deploy docker containers and manage them
+
+  - name: Starting and enabling the docker service
+    service:
+      name: docker
+      state: started
+      enabled: true
+
+# Creating a docker network to solve for communication between the containers
+
+  - name: Creating a docker network
+    docker_network:
+      name: website-network

@@ -1,0 +1,88 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            6d:58:47:d3:9d:19:c9:59:2d:0c:7e:07:84:ea:3e:89
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=ca.airforce.ccdc.uml.edu
+        Validity
+            Not Before: Nov  7 04:18:53 2022 GMT
+            Not After : Feb  9 04:18:53 2025 GMT
+        Subject: CN=airforce.ccdc.uml.edu
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:db:30:ad:e5:7c:26:9b:4d:51:c9:ac:fd:66:60:
+                    9b:bb:09:47:7f:f9:f8:9e:c1:85:e9:da:ca:97:6d:
+                    1d:84:b6:0d:4e:cf:ee:9a:93:d8:b2:91:56:30:b1:
+                    24:9b:08:1d:ae:16:f9:a5:93:ba:8e:22:4f:51:5e:
+                    75:0f:fb:4c:32:e4:78:bf:bb:df:29:3c:7c:6e:c9:
+                    a3:09:d7:b3:f2:a5:9f:fc:d8:d2:8f:b6:71:2d:ef:
+                    b2:a6:47:3e:da:b4:4a:e2:42:59:35:3f:9d:10:68:
+                    a7:b3:71:a3:68:13:4f:a8:73:d6:06:4f:7a:e3:29:
+                    f3:da:90:17:e7:d0:c0:11:59:5b:5f:a2:d7:9f:a6:
+                    af:61:19:f3:89:1f:8f:38:81:ac:3c:ba:d1:9c:b8:
+                    b0:86:31:9f:f7:d5:2a:aa:1b:64:26:7c:4b:29:0e:
+                    0f:32:2a:9d:34:13:65:ed:f8:45:28:af:6c:5e:f1:
+                    be:cb:b9:df:7f:5f:6b:bd:72:a9:a8:f1:67:da:5d:
+                    07:a7:a6:9b:8c:fa:38:d2:77:a5:3d:bd:38:55:0e:
+                    6b:ad:32:38:6a:89:6a:7e:29:1c:59:61:72:0b:74:
+                    1f:b2:18:46:19:b1:f5:be:13:d3:9a:7f:c4:ee:3e:
+                    45:c5:dd:3c:93:1f:19:1b:e1:9c:6d:96:5d:25:18:
+                    9b:13
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                BE:84:A3:00:B4:7C:8A:33:F9:64:E6:6C:8B:8D:FC:FB:E3:35:36:32
+            X509v3 Authority Key Identifier: 
+                keyid:4D:B0:2E:C8:E2:B9:AF:AC:C6:BE:A2:43:FF:5D:C0:04:7E:B2:D7:6D
+                DirName:/CN=ca.airforce.ccdc.uml.edu
+                serial:10:9B:15:A4:12:D1:90:7C:DC:13:80:95:94:9E:39:04:52:EA:93:27
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:airforce.ccdc.uml.edu
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        71:be:2b:4e:0d:8d:83:8f:80:ce:8d:3e:2c:73:1f:28:e5:e7:
+        29:8f:27:49:e0:80:ca:c8:09:89:32:2c:84:f6:41:b1:d6:d7:
+        18:b8:f3:ab:c9:07:db:96:1f:f5:c4:9a:fa:4b:96:fe:e7:2a:
+        65:66:6e:38:d8:2d:35:03:e0:d0:37:45:a1:2b:5a:ba:5a:9d:
+        3d:36:e3:a4:cf:9f:60:f1:a0:52:41:5c:56:82:4b:c7:15:6e:
+        e8:cf:d0:93:00:6c:7e:4f:fc:2b:d2:1f:9a:69:a1:1a:f0:08:
+        ec:25:a1:2b:5a:ad:cc:c2:e3:ee:ea:38:59:01:fc:63:5c:bc:
+        6b:1d:38:30:04:e1:bd:2a:2a:f6:27:a6:09:a7:79:af:1a:72:
+        9d:6c:f3:86:1d:2f:f5:2a:49:05:c6:43:51:fe:9d:57:51:38:
+        e2:b8:47:e9:4c:8d:37:8a:6f:da:03:28:2b:4f:dc:30:1b:9f:
+        95:3e:23:6f:43:83:18:15:cf:67:e2:32:5e:07:dd:26:45:a3:
+        c3:2b:af:24:f9:3d:a3:1d:62:86:16:8f:de:4e:a1:cb:a0:9a:
+        8e:90:16:2c:7d:3b:5a:51:13:41:6c:15:91:de:4a:06:a7:65:
+        d8:f6:79:0f:c0:0a:a7:39:2a:5a:14:45:3b:1a:7c:dd:98:34:
+        f5:33:66:31
+-----BEGIN CERTIFICATE-----
+MIIDnzCCAoegAwIBAgIQbVhH050ZyVktDH4HhOo+iTANBgkqhkiG9w0BAQsFADAj
+MSEwHwYDVQQDDBhjYS5haXJmb3JjZS5jY2RjLnVtbC5lZHUwHhcNMjIxMTA3MDQx
+ODUzWhcNMjUwMjA5MDQxODUzWjAgMR4wHAYDVQQDDBVhaXJmb3JjZS5jY2RjLnVt
+bC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDbMK3lfCabTVHJ
+rP1mYJu7CUd/+fiewYXp2sqXbR2Etg1Oz+6ak9iykVYwsSSbCB2uFvmlk7qOIk9R
+XnUP+0wy5Hi/u98pPHxuyaMJ17PypZ/82NKPtnEt77KmRz7atEriQlk1P50QaKez
+caNoE0+oc9YGT3rjKfPakBfn0MARWVtfotefpq9hGfOJH484gaw8utGcuLCGMZ/3
+1SqqG2QmfEspDg8yKp00E2Xt+EUor2xe8b7Lud9/X2u9cqmo8WfaXQenppuM+jjS
+d6U9vThVDmutMjhqiWp+KRxZYXILdB+yGEYZsfW+E9Oaf8TuPkXF3TyTHxkb4Zxt
+ll0lGJsTAgMBAAGjgdEwgc4wCQYDVR0TBAIwADAdBgNVHQ4EFgQUvoSjALR8ijP5
+ZOZsi438++M1NjIwXgYDVR0jBFcwVYAUTbAuyOK5r6zGvqJD/13ABH6y122hJ6Ql
+MCMxITAfBgNVBAMMGGNhLmFpcmZvcmNlLmNjZGMudW1sLmVkdYIUEJsVpBLRkHzc
+E4CVlJ45BFLqkycwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMCAG
+A1UdEQQZMBeCFWFpcmZvcmNlLmNjZGMudW1sLmVkdTANBgkqhkiG9w0BAQsFAAOC
+AQEAcb4rTg2Ng4+Azo0+LHMfKOXnKY8nSeCAysgJiTIshPZBsdbXGLjzq8kH25Yf
+9cSa+kuW/ucqZWZuONgtNQPg0DdFoStaulqdPTbjpM+fYPGgUkFcVoJLxxVu6M/Q
+kwBsfk/8K9IfmmmhGvAI7CWhK1qtzMLj7uo4WQH8Y1y8ax04MAThvSoq9iemCad5
+rxpynWzzhh0v9SpJBcZDUf6dV1E44rhH6UyNN4pv2gMoK0/cMBuflT4jb0ODGBXP
+Z+IyXgfdJkWjwyuvJPk9ox1ihhaP3k6hy6CajpAWLH07WlETQWwVkd5KBqdl2PZ5
+D8AKpzkqWhRFOxp83Zg09TNmMQ==
+-----END CERTIFICATE-----
