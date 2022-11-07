@@ -15,3 +15,4 @@ Part 1:  Install ansible and community.docker on the workstation. The ansible ga
 apt install ansible
 ansible-galaxy collection install community.docker
 ```
+
