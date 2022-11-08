@@ -178,7 +178,7 @@ We have now deployed an haproxy container that will proxy the incoming requests 
 curl https://airforce.ccdc.uml.edu 
 
 ```
-
+![](images/curl.png)  
 
 **Note:** Since this is a self - signed certificate, you will have to explicitly make your browser trust the certificate by going into the browser settings. If this was signed by a certified certificate authority, you will no longer need to explicitly change the certificate trust settings.
 
@@ -188,7 +188,7 @@ curl https://airforce.ccdc.uml.edu
 
 - If the user is trying to access <https://ipaddress/admin>; the output looks like below. We are not able to access the web
 
-[Error](images/503.png)
+[Error] (images/503.png)
 
 - If you try to access https://ipaddress; the https request does go through and we will be able to see the content.
 
