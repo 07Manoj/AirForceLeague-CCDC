@@ -80,4 +80,4 @@ Now that the connection is established between the workstation and the remote ho
 Ansible uses playbooks which have tasks inside them and we execute those tasks on the remote hosts. Playbooks are  basically yaml files.
 
 Refer to the following documentation that would help create and run playbooks.
-[Playbook Documentation](playbook.md)
+[Config Playbook](Initial_playbook.md)

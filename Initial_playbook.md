@@ -72,12 +72,12 @@ nano config.yml
       update_cache: true
 ```
 
-- **Package:**This is a generic package module that will use the package of the target system. When you run a playbook, ansible gathers facts about the target host which includes the package manager used by the remote system. Ansible pulls the information from in there, loads it into the package module and uses that as a package manager.
-    - 1) This is very useful if you are installing packages on remote systems which use different package managers. Instead of creating multiple tasks with different package managers, you can create one task which will solve for every host.
-    - 2) Please note that "ansible.builtin.package" and "package" are the exact same thing. You do not have to specify the "ansible.builtin" before the module name.
+- **Package:** This is a generic package module that will use the package of the target system. When you run a playbook, ansible gathers facts about the target host which includes the package manager used by the remote system. Ansible pulls the information from in there, loads it into the package module and uses that as a package manager.
+    -  This is very useful if you are installing packages on remote systems which use different package managers. Instead of creating multiple tasks with different package managers, you can create one task which will solve for every host.
+    -  Please note that *"ansible.builtin.package"* and "package" are the exact same thing. You do not have to specify the "ansible.builtin" before the module name.
 - **Name:** We list the names of all the packages you want to install.
 - **State:latest**  This basically updates the package if it is not the latest one
-- **Update_cache:true**  This is basically the equivalent of "apt update" in a debian machine. It updates the packages.
+- **Update_cache:true**  This is basically the equivalent of *"apt update"* in a debian machine. It updates the packages.
 
 **Step 5:**  Make the newly created user a part of the docker group so he wouldn't need to use sudo to execute docker commands.
 
@@ -109,7 +109,7 @@ nano config.yml
         - docker-compose
 ```
 
-- We are using the "ansible.builtin.package" module to install pip3 for python and then we are using pip to install the SDK for docker.
+- We are using the *"ansible.builtin.package"* module to install pip3 for python and then we are using pip to install the SDK for docker.
 
 **Step 7:** Start the docker service and enable it on boot-up
 
@@ -136,7 +136,7 @@ nano config.yml
       name: website-network
 ```
 
-- We are using the "community.general.docker_network" module to create a docker network. We will then be attaching all the containers to this bridged network.
+- We are using the *"community.general.docker_network"* module to create a docker network. We will then be attaching all the containers to this bridged network.
 
 We can now go ahead and run this playbook that we created by using the following command. 
 
@@ -157,4 +157,6 @@ private_key_file = ~/.ssh/ansibleid_rsa
 
 - Change your ansible.cfg file and add the path to the private key for the newly added user and the remote user name.
 
-Now that we have deployed initial configuration on the remote server, we can deploy containers which are essential for the air force challenge. 
+Now that we have deployed initial configuration on the remote server, we can deploy containers which are essential for the air force challenge.
+
+Navigate to [Container Playbook](containers_playbook.md)
