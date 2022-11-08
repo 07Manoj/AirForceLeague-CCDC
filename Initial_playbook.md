@@ -11,7 +11,6 @@ We are going to create a playbook that would perform the following tasks
 
 **Note:**  We will be creating a new user called "ansible-admin" on the remote host and will be using that user to run the playbooks going forward. Having a separate user to handle the ansible tasks keeps things tidy and it would be easy to know who made the changes if something goes wrong.
 
-**Part 1**
 
 **Step 1:** Generate a key pair that we are going to store in the default location but with a different name. I am saving the newly generated key pair with the name "ansible". Here's how it is done
 ![generate key](images/keypair.png)
