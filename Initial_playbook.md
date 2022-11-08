@@ -143,6 +143,8 @@ We can now go ahead and run this playbook that we created by using the following
 ansible-playbook config.yml
 ```
 
+![config](images/config.png)  
+
 We now have a user called "ansible-admin" and we are going to use this user to provision tasks on the remote host. To do so, we will have to change the ansible.cfg file.  
 
 ```

@@ -97,6 +97,14 @@ nano deploy.yml
 
 - **published_ports:** This esentially maps the host ports to the ports on the container. The django container by default listens on port 8000 and hence we are mapping port 8000 and 8001 on the host machine to port 8000 on the django containers.  To access the web page hosted on the django containers, we can do the following -
 
+Run the playbook using the following command:
+
+```
+ansible-playbook deploy.yml
+```
+
+![Deploy](images/deploy.png)  
+
 ```
 localhost:8000 or ipaddress:8000
 
@@ -107,4 +115,5 @@ localhost:8000 or ipaddress:8000
 
 We now have a web-server running on ports 8000 and 8001.
 
+You
 HTTP is a protocol which is un-encrypted and is vulnerable. Navigate to Navigate to [Vulnerability](Vulnerability.md) to see how it can be exploited.
