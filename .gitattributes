@@ -1,0 +1,5 @@
+Ansible/* linguist-documentation=false
+Ansible/* linguist-vendored
+
+HAPROXY/* linguist-documentation=false
+HAPROXY/* linguist-vendored
