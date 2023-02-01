@@ -3,7 +3,7 @@
 
 #Deploying the database container with environment variables and a named volume.
 
-    - name: Deploying the database container
+    - name:  Deploying the database container
       become_user: ansible-admin
       docker_container:
         name: db
@@ -39,7 +39,7 @@
           POSTGRES_DB: "postgres"
           POSTGRES_USER: "postgres"
           POSTGRES_PASSWORD: "postgres"
-          links:
+        links:
           - db
 
     - name: Deploying the django web container onto the Ubuntu Machine

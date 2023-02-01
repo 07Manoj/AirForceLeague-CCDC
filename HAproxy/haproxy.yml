@@ -19,4 +19,4 @@
           - "80:80"
           - "443:443"
         volumes:
-          - /home/ansible-admin/haproxy:/usr/local/etc/haproxy/
+          - /home/ansible-admin/haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
