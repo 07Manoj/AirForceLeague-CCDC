@@ -1,5 +1,0 @@
-{
-    "yaml.schemas": {
-        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/execution-environment.json": "file:///Users/manojsarma/Documents/GitHub/AirForceLeague-CCDC/Ansible/deploy.yml"
-    }
-}
